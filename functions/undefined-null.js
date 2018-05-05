@@ -26,7 +26,7 @@ console.log(result);
 // Null as assigned value 
 let age = 27;
 
-age = null; // Instead of assiging undefined!!!
+age = null; // Instead of assigning  undefined!!!
 
 console.log(age);
 
