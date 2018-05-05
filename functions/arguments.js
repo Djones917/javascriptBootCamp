@@ -31,6 +31,19 @@ let getTip = function (total, tipPercent = 0.2) {
 }
 
 let tip = getTip(80, .2);
-console.log(dinnerBill);
+console.log(tip);
+
+
+
+// Another work out
+
+let bookService = function (name, status = 'Check Out') {
+    return 'Name: ' + name + ' - status: ' + status;
+}
+
+let customerBook = bookService('Derek');
+console.log(customerBook);
+
+
 
 
