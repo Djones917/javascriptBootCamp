@@ -25,9 +25,12 @@ console.log(scoreText);
 
 // Chalenge Area
 // total, tipPercent .2
+// A 25% tip of $40 would be $10
 
 let getTip = function (total, tipPercent = 0.2) {
-    return total * tipPercent;
+    let percent = tipPercent * 100;
+    let tip = total * tipPercent;
+    return `A ${percent}% tip on $${total} would be $${tip}`;
 }
 
 let tip = getTip(80, .2);
