@@ -20,7 +20,7 @@ let yourGradeMessage = function (studentScore, maxScore) {
         letterGrade = 'F';
     } 
 
-    return `You got a ${letterGrade} ${testPercent}%!`;
+    return `You got a ${letterGrade} (${testPercent}%)!`;
 }
 
 let myTest = yourGradeMessage(15, 20);
