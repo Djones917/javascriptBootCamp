@@ -56,3 +56,5 @@ let convertFahrenheit = function (fahrenheit) {
 
 let temps = convertFahrenheit(74);
 console.log(temps);
+
+
