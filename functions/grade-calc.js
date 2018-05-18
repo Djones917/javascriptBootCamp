@@ -4,8 +4,8 @@
 
 
 
-let yourGradeMessage = function (studentScore, maxScore) {        
-    let testPercent = (studentScore / maxScore) * 100;
+const yourGradeMessage = function (studentScore, maxScore) {        
+    const testPercent = (studentScore / maxScore) * 100;
     let letterGrade = ' ';
 
     if (testPercent >= 90) {
@@ -23,7 +23,7 @@ let yourGradeMessage = function (studentScore, maxScore) {
     return `You got a ${letterGrade} (${testPercent}%)!`;
 }
 
-let myTest = yourGradeMessage(15, 20);
+const myTest = yourGradeMessage(15, 20);
 console.log(myTest);
 
 
