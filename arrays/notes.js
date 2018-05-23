@@ -26,9 +26,10 @@ console.log(name);
 
 // splice method
 const jobs = ['pull books', 'ship books', 'receive books'];
-jobs.splice(0, 1);
+//jobs.splice(0, 1);
 // jobs.splice(1, 0 'This is the new second item');  so this would go to the index of 1 and take 0 as an argument the the string would be inserted! 
 // jobs.splice(1, 1 'This is the new second item'); so this would got to the index of 1 and delete 1 item and replace it completely!
+jobs[2] = 'This is now the new job 3' // another way to assign a value. A quick way to swap out one for another.
 console.log(jobs);
 
 
