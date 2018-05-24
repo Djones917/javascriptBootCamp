@@ -32,8 +32,16 @@ const jobs = ['pull books', 'ship books', 'receive books'];
 jobs[2] = 'This is now the new job 3' // another way to assign a value. A quick way to swap out one for another.
 console.log(jobs);
 
+// forEach method for looping through an array THIS IS A CALL BACK FUNCTION IT'S NOTHING MORE THAN A FUNCTION PASSED TO A FUNCTION forEach is the most common array method!
+jobs.forEach(function() {
+   console.log('Testing123'); // This will call three times because we have three items in array
+})
 
 
+// Another example of forEach item and index are two arguments we can pass in
+const employees = ['Randy', 'Adam', 'Curtis', 'David'];
 
-
-
+employees.forEach(function(item, index){
+   console.log(index); 
+   console.log(item)
+})
