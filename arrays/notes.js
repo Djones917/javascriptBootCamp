@@ -45,3 +45,14 @@ employees.forEach(function(item, index){
    console.log(index); 
    console.log(item)
 })
+
+
+
+
+
+// THE FOR LOOP AN ALTERNATIVE TO forEach
+// YOU CAN DO MORE WITH THE FOR LOOP AS IT'S MORE FLEXABLE WERE forEach is mostly just for an array!
+
+for (let count = 0; count <= 2; count++) {
+   console.log(count);
+}
