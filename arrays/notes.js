@@ -56,3 +56,17 @@ employees.forEach(function(item, index){
 for (let count = 0; count <= 2; count++) {
    console.log(count);
 }
+
+
+// Another example of a for loop
+const animal = ['Panda bear', 'Fox', 'Tiger', 'Rhino'];
+
+for (let count = 0; count < animal.length; count++) {
+    console.log(animal[count]);
+}
+
+// OR COUNT IN REVERSE
+//for (let count = animals.length - 1; count >= 0; count--) {
+   // console.log(animal[count]);
+//}
+
