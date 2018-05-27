@@ -29,13 +29,13 @@ myTodos.forEach(function(todo, index){
     console.log(`${num}. ${todo}`);
 })
 
-//  But with a for loop
-for (let count = 0; count < myTodos.length; count++) {
-    const num = count + 1;
-    const myTodo = myTodos[count]
-    console.log(`${num}. ${myTodo}`);
-    //console.log(myTodos[count]); 
-}
+//  But with a for loop 
+//for (let count = 0; count < myTodos.length; count++) {
+    //const num = count + 1;
+    //const myTodo = myTodos[count]
+    //console.log(`${num}. ${myTodo}`);
+    ////console.log(myTodos[count]); 
+//}
 
 
 
