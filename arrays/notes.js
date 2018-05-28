@@ -22,26 +22,31 @@ const notes = [{
 
 //notes.splice(1, 1 'This is the new second item')
 
-notes[2] = 'This is now the new note 3';
+//notes[2] = 'This is now the new note 3';
 
-notes.forEach(function(item, index){
-     console.log(index);
-     console.log(item);
-})
+//notes.forEach(function(item, index){
+    // console.log(index);
+     //console.log(item);
+//})
 
 
 console.log(notes.length)
 console.log(notes)
 
-console.log(notes.indexOf('Note 2')) // if you misspell this will come back as -1 meaning item not found in array
+//console.log(notes.indexOf('Note 2')) // if you misspell this will come back as -1 meaning item not found in array
+//console.log(notes.indexOf({})) // This will return -1
+//console.log({} === {}) // This will return false
 
+// but the below will return true objects are only equal to other objects if they are exactly the same object
+//let someObect = {}
+//let otherObect = someObect
+//console.log(someObect === otherObect) 
 
-
-
-
-
-
-
+const index = notes.findIndex(function(note, index){
+    console.log(note)
+    return note.title === 'Habbits to work on'
+})
+console.log(index)
 
 
 
