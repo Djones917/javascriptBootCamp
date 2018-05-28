@@ -1,7 +1,16 @@
 // Switched up teaching in arrays 1 notes.js and todo.js start with array ! lesson!
 
 // MDN array for reference
-const notes = ['Note 1', 'Note 2', 'Note 3'];
+const notes = [{
+   title: 'My next trip',
+   body: 'I want to go to Spain'
+}, {
+   title: 'Habbits to work on',
+   body: 'Excercise and eating better'
+}, {
+   title: 'Office Modification',
+   body: 'Get a new chair'
+}];
 //console.log(notes.length);
 //console.log(notes[0]);
 
@@ -24,7 +33,8 @@ notes.forEach(function(item, index){
 console.log(notes.length)
 console.log(notes)
 
-console.log(notes.indexOf('Note 2'))
+console.log(notes.indexOf('Note 2')) // if you misspell this will come back as -1 meaning item not found in array
+
 
 
 
