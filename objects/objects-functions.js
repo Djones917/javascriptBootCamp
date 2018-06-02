@@ -58,3 +58,29 @@ let temps = convertFahrenheit(74);
 console.log(temps);
 
 
+
+
+
+
+
+
+// my self challenge for passing an object into a function
+let = someCat = {
+    name: 'Sammy',
+    sex: 'Male',
+    age: 7
+}
+
+let anotherCat = {
+    name: 'Silver',
+    sex: 'Male',
+    age: 7
+}
+
+
+let aCat = function (cat) {
+    console.log(`${cat.name} is ${cat.age} year old!`)
+}
+
+let puddy = aCat(anotherCat)
+//console.log(puddy)
