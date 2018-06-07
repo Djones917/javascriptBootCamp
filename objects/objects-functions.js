@@ -79,9 +79,22 @@ let anotherCat = {
 
 
 let aCat = function (cat) {
-    console.log(`${cat.name} is ${cat.age} year old!`)
+   console.log(`${cat.name} is ${cat.age} year old!`)
 }
 
 let puddy = aCat(anotherCat)
 
+
+
+
+
+// return an object from a function
+let aCatInfo = function (cat) {
+    return {
+        puddySummary: `${cat.name} is a good boy. He is ${cat.age} years old!`
+    }    
+}
+
+let anotherPuddy = aCatInfo(someCat)
+console.log(anotherPuddy.puddySummary)
 
