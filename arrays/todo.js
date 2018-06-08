@@ -13,8 +13,47 @@
 // 2. The second item
 // 3. The third item
 
+// NEXT CHALLENGE
+// 1. CONVERT ARRAY TO AN ARRAY OF OBJECTS
+// 2. CREATE A FUNCTION TO REMOVE A TODO BY TEXT VALUE
 
-const myTodos = ['Feed the cats', 'Prep the coffee', 'Brush teeth', 'Watch a little TV', 'Go to bed'];
+
+
+const myTodos = [{
+    text: 'Feed the cats',
+    completed: false
+}, {
+    text: 'Prep the coffee',
+    completed: true
+}, {
+    text:'Brush teeth',
+    completed: true
+}, {
+    text: 'Watch a little TV',
+    completed: false
+}, {
+    text: 'Go to bed',
+    completed: false
+}];
+
+
+
+const deleteTodo = function (myTodos, todoText) {
+     const index = myTodos.findIndex(function(todo){
+         return todo.text.toLowerCase() === todoText.toLowerCase()
+     })
+     if (index > -1) {
+        myTodos.splice(index, 1)
+     }
+}
+
+
+
+deleteTodo(myTodos, 'Prep the coffee')
+console.log(myTodos)
+
+
+
 
 //myTodos.splice(2, 1);
 //myTodos.push('Keep on coding!');
