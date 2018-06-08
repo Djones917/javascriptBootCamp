@@ -16,18 +16,18 @@
 
 const myTodos = ['Feed the cats', 'Prep the coffee', 'Brush teeth', 'Watch a little TV', 'Go to bed'];
 
-myTodos.splice(2, 1);
-myTodos.push('Keep on coding!');
-myTodos.shift();
-console.log(`You have ${myTodos.length} todos!`);
+//myTodos.splice(2, 1);
+//myTodos.push('Keep on coding!');
+//myTodos.shift();
+//console.log(`You have ${myTodos.length} todos!`);
 //console.log(`Todo: ${myTodos[0]}`); 1st challenge
 //console.log(`Todo: ${myTodos[myTodos.length - 2]}`); 1st challenge
 //console.log(myTodos);
 
-myTodos.forEach(function(todo, index){
-    const num = index + 1;
-    console.log(`${num}. ${todo}`);
-})
+//myTodos.forEach(function(todo, index){
+    //const num = index + 1;
+    //console.log(`${num}. ${todo}`);
+//})
 
 //  But with a for loop 
 //for (let count = 0; count < myTodos.length; count++) {
