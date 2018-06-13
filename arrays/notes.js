@@ -14,18 +14,20 @@ const notes = [{
 
 
 const findNote = function (notes, noteTitle) {
-     return notes.find(function(note, index){
+     return notes.find(function (note, index){
          return note.title.toLowerCase() === noteTitle.toLowerCase()
      })     
 }
 
 
 // filter
-notes.filter(function(){
-    
+const filteredNotes = notes.filter(function (note, index) {
+    const isTitleMatch = note.title.toLowerCase().includes('office')
+    const isBodyMatch = note.body.toLowerCase().includes('office')    
+    return isTitleMatch || isBodyMatch
 })
 
-
+console.log(filteredNotes)
 
 
 //const findNote = function (notes, noteTitle) {
