@@ -48,7 +48,6 @@ const deleteTodo = function (myTodos, todoText) {
 }
 
 
-
 deleteTodo(myTodos, 'Prep the coffee')
 console.log(myTodos)
 
