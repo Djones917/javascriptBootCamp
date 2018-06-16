@@ -29,7 +29,9 @@ const findNotes = function (notes, query) {
 }
 
 
-console.log(findNotes)
+console.log(findNotes(notes, 'work'))
+
+
 
 
 //const findNote = function (notes, noteTitle) {

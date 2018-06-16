@@ -48,8 +48,18 @@ const deleteTodo = function (myTodos, todoText) {
 }
 
 
-deleteTodo(myTodos, 'Prep the coffee')
-console.log(myTodos)
+const getThingsToDo = function (myTodos) {
+    return myTodos.filter(function (todo) {
+       return !todo.completed
+    })
+}
+
+console.log(getThingsToDo(myTodos))
+
+
+
+//deleteTodo(myTodos, 'Prep the coffee')
+//console.log(myTodos)
 
 
 
