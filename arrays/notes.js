@@ -13,6 +13,14 @@ const notes = [{
 }];
 
 
+const sortNotes = function () {
+   notes.sort(function (a, b) {
+
+   })
+}
+
+
+
 const findNote = function (notes, noteTitle) {
      return notes.find(function (note, index){
          return note.title.toLowerCase() === noteTitle.toLowerCase()
