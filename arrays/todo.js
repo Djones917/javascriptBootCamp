@@ -17,6 +17,9 @@
 // 1. CONVERT ARRAY TO AN ARRAY OF OBJECTS
 // 2. CREATE A FUNCTION TO REMOVE A TODO BY TEXT VALUE
 
+// Next Challenge sort
+
+
 
 
 const myTodos = [{
@@ -37,6 +40,20 @@ const myTodos = [{
 }];
 
 
+const sortTodos = function (myTodos) {
+   myTodos.sort(function (a, b) {
+      if (!a.completed && b.completed) {
+          return -1
+      } else if (!b.completed &&  a.completed) {
+          return 1
+      } else {
+          return 0
+      }
+   })
+}
+
+
+
 
 const deleteTodo = function (myTodos, todoText) {
      const index = myTodos.findIndex(function(todo){
@@ -54,7 +71,13 @@ const getThingsToDo = function (myTodos) {
     })
 }
 
-console.log(getThingsToDo(myTodos))
+
+sortTodos(myTodos)
+console.log(myTodos)
+
+
+
+//console.log(getThingsToDo(myTodos))
 
 
 
