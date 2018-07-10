@@ -17,12 +17,19 @@ const myTodos = [{
     completed: false
 }];
 
-const paragraphs = document.querySelectorAll('p')
-//console.log(ps)
-
-paragraphs.forEach(function (paragraph){
-	if(paragraph.textContent.includes('the')) {
-		paragraph.remove()
-	}
+// You have two todos left (p element)
+// Add a p for each todo above (use text value)
+const incompleteTodos = myTodos.filter(function (todo) {
+      return !todo.completed
 })
 
+
+const summary = document.createElement('h2')
+summary.textContent = `You have ${incompleteTodos.length} todos left`
+document.querySelector('body').appendChild(summary)
+
+myTodos.forEach(function (todo) {
+    const p = document.createElement('p')
+    p.textContent = todo.text
+    document.querySelector('body').appendChild(p)
+})
