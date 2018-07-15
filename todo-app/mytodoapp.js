@@ -23,7 +23,7 @@ const incompleteTodos = myTodos.filter(function (todo) {
       return !todo.completed
 })
 
-// remember this part!
+// remember this part I might want to do a new notes repository!
 const summary = document.createElement('h2')
 summary.textContent = `You have ${incompleteTodos.length} todos left`
 document.querySelector('body').appendChild(summary)
