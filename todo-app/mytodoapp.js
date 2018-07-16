@@ -33,3 +33,9 @@ myTodos.forEach(function (todo) {
     p.textContent = todo.text
     document.querySelector('body').appendChild(p)
 })
+
+
+document.querySelector('button').addEventListener('click', function (e) {
+    e.target.textContent = 'Button was clicked!'
+})
+
