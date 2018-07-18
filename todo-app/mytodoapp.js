@@ -35,7 +35,7 @@ myTodos.forEach(function (todo) {
 })
 
 
-document.querySelector('button').addEventListener('click', function (e) {
-    e.target.textContent = 'Button was clicked!'
+document.querySelector('#add-todo').addEventListener('click', function (e) {
+   console.log('Add a new todo...')
 })
 

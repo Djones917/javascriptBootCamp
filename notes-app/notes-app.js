@@ -15,11 +15,27 @@ document.querySelector('#create-note').addEventListener('click', function (e) {
 
 
 document.querySelector('#remove-all').addEventListener('click', function() {
-    console.log('Remove all notes')
+    document.querySelectorAll('.note').forEach(function (note) {
+           note.remove()
+    })
 })
+
 
 // Don't delet this! Using bracket notation this will select the second button. But if you switch order of the button in html you will have also switched the function!
 // So use ids and classes in your html!
 //document.querySelectorAll('button')[1].addEventListener('click', function(){
     //console.log('Delete all notes')
 //})
+
+
+// CSS classes and ids
+// --Single--
+// p
+// #replace
+// .item
+
+// -- Multiple--
+// p#order
+// button.inventory
+// h1#title.application
+// h1.application#title
