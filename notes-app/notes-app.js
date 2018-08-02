@@ -21,6 +21,10 @@ document.querySelector('#remove-all').addEventListener('click', function() {
 })
 
 
+document.querySelector('#search-text').addEventListener('change', function(e) {
+    console.log(e.target.value)
+})
+
 // Don't delet this! Using bracket notation this will select the second button. But if you switch order of the button in html you will have also switched the function!
 // So use ids and classes in your html!
 //document.querySelectorAll('button')[1].addEventListener('click', function(){
