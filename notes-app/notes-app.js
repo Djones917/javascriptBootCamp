@@ -21,7 +21,7 @@ document.querySelector('#remove-all').addEventListener('click', function() {
 })
 
 
-document.querySelector('#search-text').addEventListener('change', function(e) {
+document.querySelector('#search-text').addEventListener('input', function(e) {
     console.log(e.target.value)
 })
 
