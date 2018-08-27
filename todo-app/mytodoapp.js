@@ -1,6 +1,6 @@
 //console.log('connected!')
 
-const myTodos = [{
+const todos = [{
     text: 'Feed the cats',
     completed: false
 }, {
