@@ -14,6 +14,12 @@ const filters = {
     searchText: ''
 }
 
+//localStorage.setItem('location', 'Utah') this takes two arugument - setItem is used for (CRUD) Create and update but update take different value
+
+//console.log(localStorage.getItem('location')) this only takes one arugument - read
+
+//localStorage.removeItem('location')
+
 const renderNotes = function (notes, filters) {
    const filteredNotes = notes.filter(function (note) {
         return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
