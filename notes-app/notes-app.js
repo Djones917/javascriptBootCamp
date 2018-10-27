@@ -14,11 +14,21 @@ const filters = {
     searchText: ''
 }
 
-//localStorage.setItem('location', 'Utah') this takes two arugument - setItem is used for (CRUD) Create and update but update take different value
 
-//console.log(localStorage.getItem('location')) this only takes one arugument - read
+//const user = {
+  //name: 'Derek',
+    //age: 43
+//}
 
-//localStorage.removeItem('location')
+//const userJSON = JSON.stringify(user)
+//console.log(userJSON)
+//localStorage.setItem('user', userJSON)
+
+const userJSON = localStorage.getItem('user')
+const user = JSON.parse(userJSON)
+console.log(`${user.name} is ${user.age} years old!`)
+
+
 
 const renderNotes = function (notes, filters) {
    const filteredNotes = notes.filter(function (note) {
