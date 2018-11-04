@@ -1,4 +1,4 @@
-const notes = [];
+let notes = [];
 
 
 const filters = {
@@ -6,8 +6,12 @@ const filters = {
 }
 
 
+// Check for existing saved data
+const notesJSON = localStorage.getItem('notes')
 
-
+if (notesJSON !== null) {
+   notes = JSON.parse(notesJSON)
+}
 
 
 const renderNotes = function (notes, filters) {
@@ -28,7 +32,12 @@ renderNotes(notes, filters)
 
 
 document.querySelector('#create-note').addEventListener('click', function (e) {
-    e.target.textContent = 'Button was clicked!'
+    notes.push({
+        title: '',
+        body: ''
+    })
+    localStorage.setItem('notes', JSON.stringify(notes))
+    renderNotes(notes, filters)
 })
 
 
