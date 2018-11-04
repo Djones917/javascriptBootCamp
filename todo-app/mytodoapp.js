@@ -1,10 +1,17 @@
-const todos = [];
+let todos = [];
 
 
 const filters = {
     searchText: '',
     hideCompleted: false
 }
+
+const todosJSON = localStorage.getItem('todos')
+
+if (todosJSON !== null) {
+   todos = JSON.parse(todosJSON)
+}
+
 
 const renderTodos = function (todos, filters) {
     const filteredTodos = todos.filter(function (todo) {
@@ -44,6 +51,7 @@ document.querySelector('#new-todo').addEventListener('submit', function (e) {
         text: e.target.elements.text.value,
         completed: false
     })
+    localStorage.setItem('todos', JSON.stringify(todos))
     renderTodos(todos, filters)
     e.target.elements.text.value = ''
 })
