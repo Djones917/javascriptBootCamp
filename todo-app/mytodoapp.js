@@ -1,21 +1,4 @@
-//console.log('connected!')
-
-const todos = [{
-    text: 'Feed the cats',
-    completed: false
-}, {
-    text: 'Prep the coffee',
-    completed: true
-}, {
-    text:'Brush teeth',
-    completed: true
-}, {
-    text: 'Watch a little TV',
-    completed: false
-}, {
-    text: 'Go to bed',
-    completed: false
-}];
+const todos = [];
 
 
 const filters = {
