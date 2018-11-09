@@ -11,7 +11,7 @@ const getSavedNotes = function () {
 
 
 // Generate the DOM structure for a note
-const genrateNoteDOM = function (note) {
+const generateNoteDOM = function (note) {
     const noteEl = document.createElement('p')
 
     if (note.title.length > 0) {
@@ -19,4 +19,20 @@ const genrateNoteDOM = function (note) {
     } else {
         noteEl.textContent = 'Unnamed note'
     }
+    return noteEl
+}
+
+
+// render application notes
+const renderNotes = function (notes, filters) {
+    const filteredNotes = notes.filter(function (note) {
+        return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
+    })
+
+    document.querySelector('#notes').innerHTML = ''
+
+    filteredNotes.forEach(function (note) {
+        const noteEl = generateNoteDOM(note)
+        document.querySelector('#notes').appendChild(noteEl)
+    })
 }

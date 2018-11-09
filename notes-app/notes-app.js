@@ -7,21 +7,6 @@ const filters = {
 
 
 
-
-
-const renderNotes = function (notes, filters) {
-   const filteredNotes = notes.filter(function (note) {
-        return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
-   })
-
-       document.querySelector('#notes').innerHTML = ''   
-
-        filteredNotes.forEach(function (note) {        
-
-        document.querySelector('#notes').appendChild(noteEl)
-   })
-}
-
 renderNotes(notes, filters)
 
 
