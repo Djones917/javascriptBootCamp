@@ -8,3 +8,15 @@ const getSavedNotes = function () {
         return []
     }
 }
+
+
+// Generate the DOM structure for a note
+const genrateNoteDOM = function (note) {
+    const noteEl = document.createElement('p')
+
+    if (note.title.length > 0) {
+        noteEl.textContent = note.title
+    } else {
+        noteEl.textContent = 'Unnamed note'
+    }
+}
