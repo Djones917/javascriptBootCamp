@@ -15,7 +15,7 @@ document.querySelector('#create-note').addEventListener('click', function (e) {
         title: '',
         body: ''
     })
-   
+   saveNotes(notes)
     renderNotes(notes, filters)
 })
 
