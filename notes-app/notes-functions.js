@@ -7,6 +7,12 @@ const getSavedNotes = function () {
     } else {
         return []
     }
+} 
+
+
+// Save the notes to local storage
+const saveNotes = function (notes) {
+    localStorage.setItem('notes', JSON.stringify(notes))
 }
 
 
