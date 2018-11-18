@@ -42,3 +42,5 @@ const renderNotes = function (notes, filters) {
         document.querySelector('#notes').appendChild(noteEl)
     })
 }
+
+
